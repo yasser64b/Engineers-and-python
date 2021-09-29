@@ -3,7 +3,7 @@
 1-  Generating 5% damping spectra (frequency domain) from ground motion Time Histories. 
 
 
-<img src="01-spectra generation from Ths\figs\M-   RSN1045_NORTHR_WPI0.png" alt="Spectra" />
+<img src="01-spectraGeneration\figs\M-   RSN1045_NORTHR_WPI0.png" alt="Spectra"/>
 
 
 2-  Median floor acceleration spectra
