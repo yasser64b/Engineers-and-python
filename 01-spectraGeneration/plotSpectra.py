@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 #  Figure limits & properties
 xlim = [0, 6]
-ylim = [0, 2.5]
+ylim = [0, 2]
 grid_lwidth = 0.15
 C = ["DeepPink", "Cyan", "blue", "Black"]  # color to plots
 
@@ -22,9 +22,9 @@ saveToDirectory = input("Directory spectra file is stored:")
 spectraType = input("Spectra type (1.DBE/MCE, 2.OBE/SSE):")
 
 if spectraType == "1":
-    scale = {"DBE": 0.5, "MCE": 0.7}
+    scale = {"DBE": 0.5, "MCE": 0.75}
 else:
-    scale = {"OBE": 0.5, "SSE": 0.7}
+    scale = {"OBE": 0.5, "SSE": 0.75}
 
 print("Applied scales: ", scale)
 
@@ -89,7 +89,7 @@ for sp in list(scale.keys()):
     plt.figure(figsize=(10, 5))
     plt.plot(
         time,
-        scaleSpectra * df[columns[-1]],
+        scaleSpectra * df["Average of SRSSes"],
         C[2],
         Spectrum[sp][:, 0],
         Spectrum[sp][:, 1],
@@ -102,7 +102,7 @@ for sp in list(scale.keys()):
         fontweight="bold",
     )
     plt.grid(linewidth=grid_lwidth)
-    plt.legend(["Mean Spectrum", sp + " Spectrum"])
+    plt.legend(["Mean SRSS Spectrum", sp + " Spectrum"])
     plt.xlim(xlim)
     plt.ylim(ylim)
     plt.savefig(sp + "_mean.png", dpi=300, bbox_inches="tight")
