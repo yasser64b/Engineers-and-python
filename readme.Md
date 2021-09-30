@@ -8,5 +8,7 @@
 
 2-  Median floor acceleration spectra
 
+<img src="02- floor spectra\figs\D- Huara 2014 Acc_floor.png" alt="Floor Spectra"/>
+
 3- Vertical Shear force distribution 
 
