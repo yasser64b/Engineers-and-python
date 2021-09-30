@@ -1,4 +1,6 @@
-# This is a repository covering all of my daily programming in the area of civil/structural/seismic engineering. 
+# Python for Engineering  
+
+This is a repository covering all of my daily programming in the area of civil/structural/seismic engineering. 
 
 1-  Generating 5% damping spectra (frequency domain) from ground motion Time Histories. 
 
