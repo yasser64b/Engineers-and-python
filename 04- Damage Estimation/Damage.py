@@ -48,6 +48,7 @@ AccD = [0, 1.6, 2.7, 4.2, 10, 14, 16, 16, 16, 16, 16]  # Damage
 
 #Calculate damage 
 DMG1 = Damage(Acc, AccD, Degree_pol=3)
+DMG1.PltCrv()
 [Acc_f, damage_f_a] = DMG1.DMG_calc(floor_acc)
 
 # __________________________________________________
@@ -67,6 +68,7 @@ DriftD = [0, 0, 0, 0, 0, 0, 0.50, 1, 1.2, 3.4, 5.9, 11.5, 13, 17]  # Damage in %
 
 
 DMG2 = Damage(Drift, DriftD, Degree_pol=3)
+DMG2.PltCrv()
 [value, damage_d_a] = DMG2.DMG_calc(Floor_drift)
 
 print(
@@ -79,6 +81,7 @@ Drift = [0, 0.13, 0.20, 0.30, 1, 2, 3, 5]  # floor drift
 DriftD = [0, 0, 0.50, 1, 2, 10, 13.5, 17]  # Damge in %
 
 DMG2 = Damage(Drift, DriftD, Degree_pol=3)
+DMG2.PltCrv()
 [value, damage_d_m] = DMG2.DMG_calc(Floor_driftM)
 print(
     "The associated damage to the story drift of %.2f percent is ------> %.2f percent of total cost."
