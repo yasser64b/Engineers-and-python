@@ -95,6 +95,7 @@ D = save2txt(
 
 D.save()
 
+# ________________plot_____________________________
 
 plt.plot(Sig1[0], Sig1[1],'r', Sig2[0], Sig2[1], 'b')
 plt.grid("on", linewidth=0.2)
